@@ -4,6 +4,7 @@ import javafx.scene.paint.Color;
 
 class Node {
     int data;
+    float test = 1/0;
     Node left, right, parent;
     Color color;
 
