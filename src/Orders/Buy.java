@@ -1,6 +1,8 @@
 package Orders;
 
-public class Buy {
+import java.io.Serializable;
+
+public class Buy implements Serializable {
     private static final long serialVersionUID = 529482940413L;
     private String name;
     private double totalPrice;

@@ -1,35 +1,23 @@
 package Staff;
-import java.io.EOFException;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.util.ArrayList;
 
 import BookstoreData.HeaderlessObjectOutputStream;
 import Staff.Worker.ACCESSLEVEL;
+import Style.MainPage;
+import Style.SettingStyles;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 import javafx.scene.input.KeyCombination;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import Style.*;
+
+import java.io.*;
+import java.util.ArrayList;
 
 public class WorkerData implements Serializable {
-    private static final long SerialVersionUID = 19184098341049090l;
+    private static final long SerialVersionUID = 19184098341049090L;
     ArrayList <Worker>workerData;
     File file ;
 
