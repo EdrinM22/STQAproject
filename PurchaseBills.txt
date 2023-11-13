@@ -1,8 +1,8 @@
 PurchaseBill
-Alvi Dervishaj    : Fri Feb 17 23:26:38 CET 2023
-ISBN-> 9780575080086
-	Quantity 8
+Ilvio Cumani    : Mon Nov 13 19:26:16 CET 2023
+ISBN-> 9785771908045
+	Quantity 5
 
 ---------------------------
-		Total Books: 8 
-		Total Price: 12000.0 		
+		Total Books: 5 
+		Total Price: 5.0E19 		
