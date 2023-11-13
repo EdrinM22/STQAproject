@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a7da77d-2437-420d-ad38-cc6e41f2c456" name="Changes" comment="2 Stupid Mistakes solved">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/WorkerData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/WorkerData.class" afterDir="false" />
-    </list>
+    <list default="true" id="4a7da77d-2437-420d-ad38-cc6e41f2c456" name="Changes" comment="Stupid Mistakes solved" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,6 +63,23 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\mateo\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
+        <option name="reportGuid" value="ef3a941d-2947-4043-a07f-55f5ff8ca07d" />
+        <option name="reportName" value="STQAproject/qodana/2023-11-13" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\mateo\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="ef3a941d-2947-4043-a07f-55f5ff8ca07d" reportId="STQAproject/qodana/2023-11-13" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="20" />
@@ -88,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699812188660</updated>
       <workItem from="1699820983504" duration="952000" />
-      <workItem from="1699893967952" duration="664000" />
+      <workItem from="1699893967952" duration="1026000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -114,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699821831598</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Stupid Mistakes solved">
+      <option name="closed" value="true" />
+      <created>1699894992623</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699894992623</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +156,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="2 Stupid Mistakes solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 Stupid Mistakes solved" />
+    <MESSAGE value="Stupid Mistakes solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stupid Mistakes solved" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
