@@ -33,12 +33,9 @@ public class WorkerData implements Serializable {
 			Worker worker;
 			while(true) {
 				worker = (Worker)reader.readObject();
-                if (worker instanceof Librarian)
-				workerData.add((Librarian)worker);
-                if (worker instanceof Manager)
-				workerData.add((Manager)worker);
-                if (worker instanceof Admin)
-				workerData.add((Admin)worker);
+                if (worker instanceof Librarian)   workerData.add((Librarian)worker);
+                if (worker instanceof Manager)     workerData.add((Manager)worker);
+                if (worker instanceof Admin)    workerData.add((Admin)worker);
 			}
 		} catch (EOFException e) {
 			System.out.println("Read all the books from the file");

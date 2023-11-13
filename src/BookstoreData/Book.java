@@ -1,10 +1,13 @@
 package BookstoreData;
 
-import java.io.Serializable;
-import java.util.ArrayList;
 import javafx.beans.property.SimpleStringProperty;
 
+import java.io.Serial;
+import java.io.Serializable;
+import java.util.ArrayList;
+
 public class Book implements Serializable {
+	@Serial
 	private static final long serialVersionUID = 5296705482940410483L;
 	private transient SimpleStringProperty isbn13P, titleP, priceP,stockP ,genreP,authorP,paperBackP;
     private String isbn13;
