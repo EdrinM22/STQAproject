@@ -10,6 +10,11 @@ public class Manager extends Worker {
         this.permitionToPurchse=permitionToPurchse;
     }
 
+    public Manager() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
     @Override
     public void interact() {
         // TODO Auto-generated method stub    

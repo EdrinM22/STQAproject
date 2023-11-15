@@ -30,6 +30,10 @@ public abstract class Worker implements Serializable {
         this.gender=gender;
     }
 
+    public Worker() {
+
+    }
+
     public abstract void interact();
 
     public double getTotalPurchases() {
