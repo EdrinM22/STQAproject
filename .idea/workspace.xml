@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a7da77d-2437-420d-ad38-cc6e41f2c456" name="Changes" comment="Added Manager Test but need to add more to it">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Staff/AdminTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Staff/GenderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Staff/LibrarianTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Staff/WorkerDataTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Staff/WorkerTest.java" afterDir="false" />
+    <list default="true" id="4a7da77d-2437-420d-ad38-cc6e41f2c456" name="Changes" comment="Added Test Files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/ManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,18 +77,6 @@
     <option name="linkedProjectId" value="Aak6q" />
     <option name="linkedProjectName" value="BookStore" />
     <option name="organizationId" value="p5BMG" />
-  </component>
-  <component name="QodanaHighlightedReportService">
-    <option name="localRunNotPublishedPersistedInfo">
-      <LocalReportPersistedInfo>
-        <option name="path" value="C:\Users\drita\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
-        <option name="reportGuid" value="79a4bc5d-e8f4-4841-865c-e6aaa692b819" />
-        <option name="reportName" value="STQAproject/qodana/2023-11-15" />
-      </LocalReportPersistedInfo>
-    </option>
-  </component>
-  <component name="QodanaIsSelectedPersistenceService">
-    <option name="selectedOrLoading" value="true" />
   </component>
   <component name="QodanaReportsService">
     <option name="descriptions">
@@ -207,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700060278112</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Test Files">
+      <option name="closed" value="true" />
+      <created>1700060859907</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700060859907</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +223,8 @@
     <MESSAGE value="Stupid Mistakes solved" />
     <MESSAGE value="added test dir" />
     <MESSAGE value="Added Manager Test but need to add more to it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Manager Test but need to add more to it" />
+    <MESSAGE value="Added Test Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Test Files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
