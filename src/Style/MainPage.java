@@ -2,7 +2,6 @@ package Style;
 
 import BookstoreData.Book;
 import BookstoreData.BookData;
-import Orders.BillData;
 import Orders.BuyOrders;
 import Orders.PurchaseOrders;
 import Staff.*;
@@ -29,37 +28,30 @@ import java.util.ArrayList;
 
 public class MainPage{
 
-    private BorderPane root;
-    private HBox top;
-    private VBox PersonalInfo;
-    private Stage primaryStage;
-    private Button addBookBtn;
-    private Button addWorkerBtn;
+    private final BorderPane root;
+    private final Stage primaryStage;
     private SettingStyles styles;
-    private VBox center;
-    private Worker worker;
-    private BookData books;
-    private WorkerData workers;
+    private final Worker worker;
+    private final BookData books;
+    private final WorkerData workers;
     private TableView<Book> bookTableView;
     private TableView<Worker> workerTableView;
     private BorderPane right;
     private VBox BookInfoHolder;
     private Button addBookToStockBtn;
     private Double TotalBookPrice = 0.0;
-    ArrayList <String> bookIsbns = new ArrayList<String>();
-    ArrayList <Double> prices = new ArrayList<Double>();
+    ArrayList <String> bookIsbns = new ArrayList<>();
+    ArrayList <Double> prices = new ArrayList<>();
     private HBox TotalLabelHbox;
     private VBox EmployeeInfoHolder;
     private Button purchaseBookBtn;
     private Label workerFullName;
     private Label workerEmail;
-    private Label workerAccessLevel;
     private Label workerSalary;
     private Label workerPhoneNumber;
     private boolean permitionToPurchase;
     private boolean permitionToCheckLib;
     private boolean permitionToBill;
-    private BillData billData;
 
 
     public MainPage(Stage primaryStage, Worker worker) {
@@ -68,15 +60,14 @@ public class MainPage{
         this.worker=worker;
         this.books = new BookData();
         this.workers = new WorkerData();
-        this.billData= new BillData();
 
         if(!(worker instanceof Librarian)){
            int a=0;
-           String names="\n";
+           StringBuilder names= new StringBuilder("\n");
         for (Book b : books.getBooks()) {
             if(Integer.parseInt(b.getStock()) < 5){
                 System.out.println(b.getStock());
-                names+= b.getTitle()+"\n";
+                names.append(b.getTitle()).append("\n");
                 a++;
             }
         }
@@ -103,7 +94,7 @@ public class MainPage{
         primaryStage.setMinWidth(1635);
         
         //Left Pane
-        PersonalInfo = new VBox(25);
+        VBox personalInfo = new VBox(25);
         Image profileImage;
         if(worker.getGender().equals(Gender.FEMALE)){
             profileImage = new Image(new FileInputStream("src\\Images\\Woman.png"));
@@ -123,12 +114,12 @@ public class MainPage{
         Text status = new Text(worker.getACCESSLEVEL().toString());
         status.setStyle(styles.getMainPagePersonalInfoStyle());
         
-        PersonalInfo.getChildren().addAll(circle, name, email, phone, status);
-        PersonalInfo.setStyle(styles.getMainPageLeftPaneStyle());
-        root.setLeft(PersonalInfo);
+        personalInfo.getChildren().addAll(circle, name, email, phone, status);
+        personalInfo.setStyle(styles.getMainPageLeftPaneStyle());
+        root.setLeft(personalInfo);
 
         //Top Pane
-        top = new HBox(500);
+        HBox top = new HBox(500);
         Button LogOutBtn = new Button("Log Out");
         LogOutBtn.setStyle(styles.getLogOutBtnStyle());
 
@@ -149,11 +140,7 @@ public class MainPage{
         top.setAlignment(Pos.TOP_RIGHT);
         top.setPadding(new javafx.geometry.Insets(10, 10, 10, 0));
         root.setTop(top);
-       
 
-        //Center Pane
-        // center = new VBox(20);
-        // center.setPadding(new javafx.geometry.Insets(0, 0, 10, 0));
         TabPane tabPane = new TabPane();
 
         Tab BookTab = new Tab("Books");
@@ -162,17 +149,17 @@ public class MainPage{
         tabPane.getTabs().add(BookTab);
         //bookTableView = showTable(0, "Title", "Author", "Price", "Stock","Isbn13","Paperback");
         bookTableView = MainController.bookTable(books, primaryStage, "Title", "Author", "Price", "Stock","Isbn13","Paperback");
-        
+
 
 
         HBox bookBottomPane = new HBox(20);
         bookBottomPane.setPadding(new javafx.geometry.Insets(10, 10, 10, 0));
         bookBottomPane.setStyle(styles.getBtnPane());
-        addBookBtn = new Button("Add Book");
+        Button addBookBtn = new Button("Add Book");
         addBookBtn.setStyle(styles.getLogOutBtnStyle());
         addBookToStockBtn = new Button("Add To Stock");
         addBookToStockBtn.setStyle(styles.getLogOutBtnStyle());
-        
+
         if(worker.getACCESSLEVEL().toString().equals("LIBRARIAN")) {
             addBookBtn.setDisable(true);
             addBookToStockBtn.setDisable(true);
@@ -187,7 +174,7 @@ public class MainPage{
         BookTab.setContent(bookBorderPane);
 
         //Employee Tab
-    
+
         Tab EmployeeTab = new Tab("Employees");
         EmployeeTab.setStyle(styles.getBookTableStyle());
         EmployeeTab.setClosable(false);
@@ -209,7 +196,7 @@ public class MainPage{
         workerBottomPane.setPadding(new javafx.geometry.Insets(10, 10, 10, 0));
         workerBottomPane.setStyle(styles.getBtnPane());
 
-        addWorkerBtn = new Button("Add Worker");
+        Button addWorkerBtn = new Button("Add Worker");
 
         if(!worker.getACCESSLEVEL().toString().equals("ADMIN")){
                     addWorkerBtn.setDisable(true);
@@ -218,21 +205,21 @@ public class MainPage{
         addWorkerBtn.setStyle(styles.getLogOutBtnStyle());
         workerBottomPane.getChildren().add(addWorkerBtn);
         workerBottomPane.setAlignment(Pos.BOTTOM_RIGHT);
-        
-        
+
+
         BorderPane workerBorderPane = new BorderPane();
         workerBorderPane.setCenter(workerTableView);
         workerBorderPane.setBottom(workerBottomPane);
-        
+
         EmployeeTab.setContent(workerBorderPane);
-        
+
         // center.getChildren().add(tabPane);
         root.setCenter(tabPane);
 
         //Right Pane
         root.setRight(getRightBook());
 
-        
+
         //Button Action
 
         searchBar.setOnKeyPressed(e -> {
@@ -244,13 +231,7 @@ public class MainPage{
                     System.out.println("hyri");
                     Book book = books.searchByTitle(content);
                     System.out.println("U gjet libri" + book.getTitle());
-                    if(book != null){
-                        BookInfoHolder.getChildren().add(getPurchaseBookPane(book));
-                    }
-                }else if(choice.equals("Author")){
-
-                }else{
-
+                    BookInfoHolder.getChildren().add(getPurchaseBookPane(book));
                 }
 
             }
@@ -262,14 +243,14 @@ public class MainPage{
 
         addBookBtn.setOnAction(e-> MainController.addBook(books, primaryStage, worker));
 
-        
+
         bookTableView.setOnMouseClicked(e -> {
             if(e.getClickCount() == 2){
                 Book book = bookTableView.getSelectionModel().getSelectedItem();
                 BookInfoHolder.getChildren().add(getPurchaseBookPane(book));
             }
         });
-        
+
         workerTableView.setOnMouseClicked(e -> {
             if(e.getClickCount() == 2){
                 if(workerTableView.getSelectionModel().getSelectedItem().getACCESSLEVEL().toString().equals("ADMIN")){
@@ -280,20 +261,19 @@ public class MainPage{
                 EmployeeInfoHolder.getChildren().add(getEmployeePane(employee));
             }
         });
-        
+
         addBookToStockBtn.setOnAction(e -> {
-    
+
             ArrayList<Integer> quantity = new ArrayList<>();
 
             for (Node node: BookInfoHolder.getChildren()) {
                 GridPane g=(GridPane) node;
                 for (Node el: g.getChildren()) {
-                   
-                    
-                    if(el instanceof TextField)
+
+
+                    if(el instanceof TextField t)
                     {
-                        TextField t=(TextField) el;
-                        quantity.add(Integer.parseInt(t.getText()));  
+                        quantity.add(Integer.parseInt(t.getText()));
                     }
                 }
             }
@@ -304,7 +284,7 @@ public class MainPage{
             primaryStage.setFullScreen(true);
        });
 
-       
+
        purchaseBookBtn.setOnAction(e -> {
         System.out.println("purchase");
         ArrayList<Integer> quantity = new ArrayList<>();
@@ -312,13 +292,12 @@ public class MainPage{
             GridPane g=(GridPane) node;
             for (Node el: g.getChildren()) {
                int q=0;
-                
-                if(el instanceof TextField)
+
+                if(el instanceof TextField t)
                 {
-                    TextField t=(TextField) el;
                     q = Integer.parseInt(t.getText());
-                    
-                    quantity.add(q);     
+
+                    quantity.add(q);
                 }
                 if(q>books.getBookQuantity(bookIsbns.get(BookInfoHolder.getChildren().indexOf(node)))){
                     Alert alert = new Alert(AlertType.ERROR);
@@ -327,9 +306,9 @@ public class MainPage{
                     alert.showAndWait();
                     return;
                 }
-               
+
             }
-            
+
         }
         PurchaseOrders purchase = new PurchaseOrders(bookIsbns, quantity, TotalBookPrice, worker.getFullName());
         books.removeBooksFromStock(purchase);
@@ -355,10 +334,10 @@ public class MainPage{
             }
         });
     }
-    
+
     public BorderPane getRoot() {
         return root;
-    }  
+    }
 
 
     public BorderPane getRightBook() {
@@ -375,14 +354,12 @@ public class MainPage{
         purchaseBookBtnHolder.setStyle(styles.getBtnPane());
         purchaseBookBtn = new Button("Purchase Books");
         if(worker instanceof Librarian){
-            worker = (Librarian) worker;
             boolean hasAccess = ((Librarian) worker).isPermitionToBill();
             if(!hasAccess){
                 purchaseBookBtn.setDisable(true);
             }
         }
         if(worker instanceof Manager){
-            worker = (Manager) worker;
             boolean hasAccess = ((Manager) worker).isPermitionToPurchse();
             if(!hasAccess){
                 addBookToStockBtn.setDisable(true);
@@ -402,13 +379,13 @@ public class MainPage{
 
         right.setCenter(EmployeeInfoHolder);
 
-        
+
         return right;
     }
 
 
     public GridPane getPurchaseBookPane(Book book){
-        
+
         GridPane grid = new GridPane();
         grid.setStyle(styles.getSalesGridPane());
         grid.setPrefHeight(100);
@@ -420,8 +397,19 @@ public class MainPage{
         bookIsbns.add(book.getIsbn13());
         prices.add(Double.parseDouble(book.getPrice()));
         bookISBN.setStyle(styles.getSalesLabel());
-        Label bookPrice = new Label("" + book.getPrice());
+        Label bookPrice = new Label(book.getPrice());
         bookPrice.setStyle(styles.getSalesLabel());
+        TextField nrBooks = getTextField(grid, bookPrice);
+
+        grid.add(bookISBN, 0, 0);
+        grid.add(bookPrice, 1, 0);
+        grid.add(nrBooks, 0, 1);
+
+
+        return grid;
+    }
+
+    private TextField getTextField(GridPane grid, Label bookPrice) {
         TextField nrBooks = new TextField();
         nrBooks.setPrefHeight(20);
         nrBooks.setPrefWidth(50);
@@ -437,19 +425,13 @@ public class MainPage{
                 grid.add(total, 1, 1);
                 Label totalLabel = new Label("Total: " + TotalBookPrice);
                 totalLabel.setStyle(styles.getSalesLabel());
-                if(TotalLabelHbox.getChildren().size() != 0){
-                    TotalLabelHbox.getChildren().clear();;
+                if(!TotalLabelHbox.getChildren().isEmpty()){
+                    TotalLabelHbox.getChildren().clear();
                 }
                 TotalLabelHbox.getChildren().add(totalLabel);
             }
         });
-        
-        grid.add(bookISBN, 0, 0);
-        grid.add(bookPrice, 1, 0);
-        grid.add(nrBooks, 0, 1);
-
-
-        return grid;
+        return nrBooks;
     }
 
 
@@ -484,33 +466,21 @@ public class MainPage{
         CheckBox newPermitionToPurchaseCheckBox = new CheckBox("Permition to purchase");
         
         newPermitionToPurchaseCheckBox.setOnAction(e->{
-            if(newPermitionToPurchaseCheckBox.isSelected()){
-                permitionToPurchase = true;
-            } else {
-                permitionToPurchase = false;
-            }
+            permitionToPurchase = newPermitionToPurchaseCheckBox.isSelected();
             System.out.println(permitionToPurchase);
         });
         
         CheckBox newPremitionToCheckLib = new CheckBox("Check librararian");
 
         newPremitionToCheckLib.setOnAction(e->{
-            if(newPremitionToCheckLib.isSelected()){
-                permitionToCheckLib = true;
-            } else {
-                permitionToCheckLib = false;
-            }
+            permitionToCheckLib = newPremitionToCheckLib.isSelected();
             System.out.println(permitionToCheckLib);
         });
 
         CheckBox newPremitionToBill = new CheckBox("Permition to bill");
 
         newPremitionToBill.setOnAction(e->{
-            if(newPremitionToBill.isSelected()){
-                permitionToBill = true;
-            } else {
-                permitionToBill = false;
-            }
+            permitionToBill = newPremitionToBill.isSelected();
             System.out.println(permitionToBill);
         });
 
@@ -623,11 +593,10 @@ public class MainPage{
         grid.add(workerSalary, 0, 3);
         grid.add(workerPhoneNumber, 0, 4);
         grid.add(totalSales, 0, 5);
-        if(tempworker instanceof Manager||tempworker instanceof Admin)
-        grid.add(totalBuys,0,7);
+        if(tempworker instanceof Manager||tempworker instanceof Admin) {grid.add(totalBuys,0,7);}
         grid.add(deletWorkerBtn, 0, 8);
         grid.add(editWorkerBtn, 1, 8);
-        
-        return grid;
+    return grid;
     }
+
 }

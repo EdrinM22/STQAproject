@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class PurchaseOrders implements Serializable{
+    @Serial
     private static final long serialVersionUID = 529482940413L;
     private transient ArrayList<String >isbn13;
     private transient ArrayList<Integer>quantity;

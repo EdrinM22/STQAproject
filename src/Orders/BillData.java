@@ -20,13 +20,9 @@ public class BillData {
         
         try(ObjectInputStream reader = new ObjectInputStream(new FileInputStream(purchasefile))) {
 			PurchaseOrders p;
-            while (true){
-                System.out.println("tits");
-                p=(PurchaseOrders)reader.readObject();
-                
-                purchases.add(p);
-            }
-		} catch (EOFException e) {
+            p=(PurchaseOrders)reader.readObject();
+            purchases.add(p);
+        } catch (EOFException e) {
 			System.out.println("Read all the bills from the file");
 		} catch (ClassNotFoundException e) {
 			System.out.println("Class not found");
@@ -39,10 +35,8 @@ public class BillData {
         
         try(ObjectInputStream reader = new ObjectInputStream(new FileInputStream(buyfile))) {
 			BuyOrders p;
-            while (true){
-                p=(BuyOrders)reader.readObject();
-                buys.add(p);
-            }
+            p=(BuyOrders)reader.readObject();
+            buys.add(p);
 		} catch (EOFException e) {
 			System.out.println("Read all the bills from the file");
 		} catch (ClassNotFoundException e) {

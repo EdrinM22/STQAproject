@@ -37,10 +37,8 @@ public class BookData implements Serializable {
         
         try(ObjectInputStream reader = new ObjectInputStream(new FileInputStream(file))) {
 			Book book;
-			while(true) {
-				book = (Book)reader.readObject();
-				books.add(book);
-			}
+			book = (Book)reader.readObject();
+			books.add(book);
 		} catch (EOFException e) {
 			System.out.println("Read all the books from the file");
 		} catch (ClassNotFoundException e) {
@@ -177,10 +175,8 @@ public class BookData implements Serializable {
 		stage.show();
     }
 	private boolean checkIsbn13(String isbn13) {
-		if(isbn13.matches("[0-9]{13}"))
-			return true;
-		return false;
-	}
+        return isbn13.matches("[0-9]{13}");
+    }
     private boolean writeBookToFile(Book newBook) {
 		try {
 			
@@ -197,7 +193,7 @@ public class BookData implements Serializable {
 			return false;
 		}
 	}
-	private boolean rewirteFile() {
+	private void rewirteFile() {
 		try {
 			
 			FileOutputStream outputStream = new FileOutputStream(file);
@@ -206,16 +202,15 @@ public class BookData implements Serializable {
 				writer.writeObject(b);
 			}
 			writer.close();
-			return true;
 		} catch(IOException ex) {
-			return false;
-		}
+            throw new RuntimeException(ex);
+        }
 	}
 
     public void addBooksToStock(BuyOrders buyOreder) {
          for (int index = 0; index < buyOreder.getIsbns().size(); index++) {
 			Book book = getBook(buyOreder.getIsbns().get(index));
-			book.addStock((int)buyOreder.getQuantity().get(index));
+			book.addStock(buyOreder.getQuantity().get(index));
 		 }
 		 rewirteFile();
 		

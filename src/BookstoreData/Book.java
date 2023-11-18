@@ -10,14 +10,14 @@ public class Book implements Serializable {
 	@Serial
 	private static final long serialVersionUID = 5296705482940410483L;
 	private transient SimpleStringProperty isbn13P, titleP, priceP,stockP ,genreP,authorP,paperBackP;
-    private String isbn13;
-	private String title;
+    private final String isbn13;
+	private final String title;
 	private String description;
-	private float price;
+	private final float price;
     private int stock;
-    private String author;
-    private String genre;
-    private ArrayList<Genre> genres = new ArrayList<>();
+    private final String author;
+
+    private final ArrayList<Genre> genres = new ArrayList<>();
 	private boolean paperback; // or e-book
 	
 	public Book(String isbn13, String title, String description, float price, String author, boolean paperback,int stock) {
@@ -28,9 +28,6 @@ public class Book implements Serializable {
 		this.description = description;
 		this.paperback = paperback;
         this.stock = stock;
-        for (Genre g: genres) {
-            this.genre.concat(g.toString() + ", ");
-        }
         setIsbn13(isbn13);
 		setTitle(title);
 		setPrice(price);
@@ -41,20 +38,11 @@ public class Book implements Serializable {
         
         
 	}
-	
-    
-	public ArrayList<Genre> getGenres() {
-		return genres;
-	}
 
 	public void addGenre(Genre genre) {
 		this.genres.add(genre);
 	}
 
-	public void addGenres(Genre...genres) {
-		for(Genre genre : genres)
-			this.addGenre(genre);
-	}
 
 	public String getDescription() {
 		return description;
@@ -77,17 +65,13 @@ public class Book implements Serializable {
 
 	@Override
 	public String toString() {
-		return this.title + " by " + this.author.toString() + ", " + this.price + " leke";
-
+		return this.title + " by " + this.author + ", " + this.price + " leke";
     }
 
     public enum Genre {
         MYSTRERY, ACTION, HISTORICAL, DYSTOPIAN, FANTASY 
     }
 
-    public static long getSerialversionuid() {
-        return serialVersionUID;
-    }
 
     public String getIsbn13() {
 
@@ -136,7 +120,7 @@ public class Book implements Serializable {
 		if(genreP == null) {
 			setGenres(genres);
 		}
-		return genreP.get().toString();
+		return genreP.get();
 	}
 
 	public void setStock (int stock) {
@@ -184,18 +168,4 @@ public class Book implements Serializable {
         return stock;
     }
 
-
-	public Object getPUBLISHER() {
-		return null;
-	}
-
-
-    public Object getQUANTITY() {
-        return null;
-    }
-
-
-    public Object getLANGUAGE() {
-        return null;
-    }
 }

@@ -5,7 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a7da77d-2437-420d-ad38-cc6e41f2c456" name="Changes" comment="Added Test Files">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/Book$Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/Book$Genre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/BookData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/BookData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/HeaderlessObjectOutputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/HeaderlessObjectOutputStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/BillData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/BillData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/Buy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/Buy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/BuyOrders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/BuyOrders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/Purchase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/Purchase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/PurchaseOrders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/PurchaseOrders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Gender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Librarian.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Librarian.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Worker$ACCESSLEVEL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Worker$ACCESSLEVEL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Worker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/WorkerData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/WorkerData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Style/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Style/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Style/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Style/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Style/SettingStyles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Style/SettingStyles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/StyleControllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/StyleControllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/StyleControllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/StyleControllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookstoreData/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookstoreData/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookstoreData/BookData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookstoreData/BookData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders/BillData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orders/BillData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders/BuyOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orders/BuyOrders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders/PurchaseOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orders/PurchaseOrders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Staff/WorkerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Staff/WorkerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Staff/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/ManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,11 +56,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Mateogjini14"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c8c73661-7e98-4be2-8279-0bac8904641b" />
+        <option name="url" value="git@github.com:EdrinM22/STQAproject.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -78,19 +122,31 @@
     <option name="linkedProjectName" value="BookStore" />
     <option name="organizationId" value="p5BMG" />
   </component>
-  <component name="QodanaReportsService">
-    <option name="descriptions">
-      <ReportDescription localRun="true" path="C:\Users\drita\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="79a4bc5d-e8f4-4841-865c-e6aaa692b819" reportId="STQAproject/qodana/2023-11-15" />
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\mateo\AppData\Local\Temp\qodana_output1\qodana.sarif.json" />
+        <option name="reportGuid" value="9b5c704b-a50a-4877-b249-3e5b6d69d694" />
+        <option name="reportName" value="STQAproject/qodana/2023-11-18" />
+      </LocalReportPersistedInfo>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ManagerTest">
-    <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\mateo\AppData\Local\Temp\qodana_output1\qodana.sarif.json" reportGuid="9b5c704b-a50a-4877-b249-3e5b6d69d694" reportId="STQAproject/qodana/2023-11-18" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Local">
+    <configuration name="Local" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="20" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="BookStoreProject" />
-      <option name="PROGRAM_PARAMETERS" value="--module-path &quot;C:\Users\drita\Desktop\Epoka\Senior\Software_Testing\openjfx-21.0.1_windows-x64_bin-sdk\javafx-sdk-21.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\drita\Desktop\Epoka\Senior\Software_Testing\openjfx-21.0.1_windows-x64_bin-sdk\javafx-sdk-21.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="PROGRAM_PARAMETERS" value="--module-path &quot;C:\Users\mateo\Downloads\openjfx-21.0.1_windows-x64_bin-sdk\javafx-sdk-21.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\mateo\Downloads\openjfx-21.0.1_windows-x64_bin-sdk\javafx-sdk-21.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,6 +182,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Local" />
+      <item itemvalue="JUnit.ManagerTest" />
+      <item itemvalue="JUnit.ManagerTest.testIsCheckLibrarians" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ManagerTest" />
