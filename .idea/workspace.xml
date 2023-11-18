@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a7da77d-2437-420d-ad38-cc6e41f2c456" name="Changes" comment="Added Test Files">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/Book$Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/Book$Genre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/BookData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/BookData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/HeaderlessObjectOutputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/HeaderlessObjectOutputStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/BillData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/BillData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/Buy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/Buy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/BuyOrders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/BuyOrders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/Purchase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/Purchase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/PurchaseOrders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/PurchaseOrders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Gender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Librarian.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Librarian.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Worker$ACCESSLEVEL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Worker$ACCESSLEVEL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Worker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/WorkerData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/WorkerData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Style/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Style/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Style/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Style/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Style/SettingStyles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Style/SettingStyles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/StyleControllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/StyleControllers/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/StyleControllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/StyleControllers/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookstoreData/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookstoreData/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookstoreData/BookData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookstoreData/BookData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Orders/BillData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orders/BillData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Orders/BuyOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orders/BuyOrders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Orders/PurchaseOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orders/PurchaseOrders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Staff/WorkerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Staff/WorkerData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/ManagerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="4a7da77d-2437-420d-ad38-cc6e41f2c456" name="Changes" comment="I just want to die rn to be honest&#10;Finished the qodana errors" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +41,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -261,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700060859907</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="I just want to die rn to be honest&#10;Finished the qodana errors">
+      <option name="closed" value="true" />
+      <created>1700337550753</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700337550753</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +260,8 @@
     <MESSAGE value="added test dir" />
     <MESSAGE value="Added Manager Test but need to add more to it" />
     <MESSAGE value="Added Test Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Test Files" />
+    <MESSAGE value="I just want to die rn to be honest&#10;Finished the qodana errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="I just want to die rn to be honest&#10;Finished the qodana errors" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
