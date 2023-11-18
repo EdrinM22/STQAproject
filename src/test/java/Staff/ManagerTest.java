@@ -5,34 +5,34 @@ import Staff.Manager;
 import Staff.Worker;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ManagerTest {
 
     @Test
     public void testIsCheckLibrarians() {
         Manager manager = new Manager();
-        assertFalse(manager.isCheckLibrarians());
+        assertEquals(false, manager.isCheckLibrarians());
     }
 
     @Test
     public void testSetCheckLibrarians() {
         Manager manager = new Manager();
         manager.setCheckLibrarians(true);
-        assertTrue(manager.isCheckLibrarians());
+        assertEquals(true, manager.isCheckLibrarians());
     }
 
     @Test
     public void testIsPermitionToPurchase() {
         Manager manager = new Manager();
-        assertFalse(manager.isPermitionToPurchse());
+        assertEquals(false, manager.isPermitionToPurchse());
     }
 
     @Test
     public void testSetPermitionToPurchase() {
         Manager manager = new Manager();
         manager.setPermitionToPurchse(true);
-        assertTrue(manager.isPermitionToPurchse());
+        assertEquals(true, manager.isPermitionToPurchse());
     }
 
     @Test
@@ -47,7 +47,7 @@ public class ManagerTest {
         assertEquals("01/01/1990", manager.getDateOfBirth());
         assertEquals(Gender.MALE, manager.getGender());
         assertEquals("password123", manager.getPassword());
-        assertTrue(manager.isPermitionToPurchse());
-        assertFalse(manager.isCheckLibrarians());
+        assertEquals(true, manager.isPermitionToPurchse());
+        assertEquals(false, manager.isCheckLibrarians());
     }
 }
