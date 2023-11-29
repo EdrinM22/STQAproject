@@ -1,6 +1,6 @@
-package test.java.Staff;
+package Staff;
 
-import Staff.Gender;
+import main.java.Staff.Gender;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

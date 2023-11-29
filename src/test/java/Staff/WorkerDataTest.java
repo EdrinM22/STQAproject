@@ -1,4 +1,4 @@
-package test.java.Staff;
+package Staff;
 
 public class WorkerDataTest {
 }

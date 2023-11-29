@@ -1,8 +1,8 @@
-package test.java.Orders;
+package Orders;
 
-import Orders.BillData;
-import Orders.BuyOrders;
-import Orders.PurchaseOrders;
+import main.java.Orders.BillData;
+import main.java.Orders.BuyOrders;
+import main.java.Orders.PurchaseOrders;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

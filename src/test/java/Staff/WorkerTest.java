@@ -1,7 +1,7 @@
-package test.java.Staff;
+package Staff;
 
-import Staff.Gender;
-import Staff.Worker;
+import main.java.Staff.Gender;
+import main.java.Staff.Worker;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;

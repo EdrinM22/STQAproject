@@ -1,4 +1,4 @@
-package test.java.Style;
+package Style;
 
 public class LoginPageTest {
 }

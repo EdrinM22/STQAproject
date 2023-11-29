@@ -4,14 +4,101 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a7da77d-2437-420d-ad38-cc6e41f2c456" name="Changes" comment="Added different tests">
+    <list default="true" id="4a7da77d-2437-420d-ad38-cc6e41f2c456" name="Changes" comment="added admin and billdataTest (here aren't included the tests where the files are empty)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Orders/BillDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Orders/BillDataTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/AdminTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/AdminTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Staff/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Staff/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStoreProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BookStoreProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/Book$Genre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/BookData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/BookstoreData/HeaderlessObjectOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Files/BookDataFile.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Images/ikona.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Images/man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Images/woman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/BillData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/Buy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/BuyOrders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/Purchase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Orders/PurchaseOrders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Gender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Librarian.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Worker$ACCESSLEVEL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Worker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/WorkerData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Style/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Style/MainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Style/SettingStyles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/StyleControllers/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/StyleControllers/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/BookstoreData/BookDataTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/BookstoreData/BookTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/BookstoreData/HeaderlessObjectOutputStreamTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Orders/BillDataTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Orders/BuyOrdersTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Orders/BuyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Orders/PurchaseOrdersTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Orders/PurchaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/AdminTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/GenderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/LibrarianTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/ManagerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/WorkerDataTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/WorkerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Style/LoginPageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Style/MainPageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Style/SettingStylesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/StyleControllers/LoginControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/StyleControllers/MainControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookstoreData/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookstoreData/BookData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookstoreData/HeaderlessObjectOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Files/BookDataFile.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/ikona.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/woman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders/BillData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders/Buy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders/BuyOrders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders/Purchase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders/PurchaseOrders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Staff/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Staff/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Staff/Librarian.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Staff/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Staff/Worker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Staff/WorkerData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/MainPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/SettingStyles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StyleControllers/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StyleControllers/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookstoreData/BookDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookstoreData/BookDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookstoreData/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookstoreData/BookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookstoreData/HeaderlessObjectOutputStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookstoreData/HeaderlessObjectOutputStreamTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Orders/BillDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Orders/BillDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Orders/BuyOrdersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Orders/BuyOrdersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Orders/BuyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Orders/BuyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Orders/PurchaseOrdersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Orders/PurchaseOrdersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Orders/PurchaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Orders/PurchaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Staff/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/AdminTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/GenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/GenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/LibrarianTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/LibrarianTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/ManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/WorkerDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/WorkerDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/WorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/WorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Style/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Style/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Style/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Style/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Style/SettingStylesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Style/SettingStylesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StyleControllers/LoginControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StyleControllers/LoginControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StyleControllers/MainControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StyleControllers/MainControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +115,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -65,6 +153,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
@@ -73,6 +162,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "create.test.in.the.same.root": "true",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -83,7 +176,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -96,24 +189,15 @@
     <option name="linkedProjectName" value="BookStore" />
     <option name="organizationId" value="p5BMG" />
   </component>
-  <component name="QodanaHighlightedReportService">
-    <option name="localRunNotPublishedPersistedInfo">
-      <LocalReportPersistedInfo>
-        <option name="path" value="C:\Users\mateo\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
-        <option name="reportGuid" value="976b386c-cbea-4b95-9903-8cf41e2dbfba" />
-        <option name="reportName" value="STQAproject/qodana/2023-11-29" />
-      </LocalReportPersistedInfo>
-    </option>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Staff" />
+    </key>
   </component>
-  <component name="QodanaIsSelectedPersistenceService">
-    <option name="selectedOrLoading" value="true" />
-  </component>
-  <component name="QodanaReportsService">
-    <option name="descriptions">
-      <ReportDescription localRun="true" path="C:\Users\drita\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="79a4bc5d-e8f4-4841-865c-e6aaa692b819" reportId="STQAproject/qodana/2023-11-15" />
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.BillDataTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="20" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -121,6 +205,21 @@
       <module name="BookStoreProject" />
       <option name="PROGRAM_PARAMETERS" value="--module-path &quot;C:\Users\mateo\Downloads\openjfx-21.0.1_windows-x64_bin-sdk\javafx-sdk-21.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\mateo\Downloads\openjfx-21.0.1_windows-x64_bin-sdk\javafx-sdk-21.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookStoreProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Staff.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Staff" />
+      <option name="MAIN_CLASS_NAME" value="Staff.AdminTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,21 +249,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="test.java.Orders" />
       <option name="MAIN_CLASS_NAME" value="test.java.Orders.BillDataTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LibrarianTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookStoreProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.Staff.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.java.Staff" />
-      <option name="MAIN_CLASS_NAME" value="test.java.Staff.LibrarianTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,19 +286,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.AdminTest (1)" />
       <item itemvalue="JUnit.AdminTest" />
       <item itemvalue="JUnit.BillDataTest" />
-      <item itemvalue="JUnit.LibrarianTest" />
       <item itemvalue="JUnit.WorkerTest" />
       <item itemvalue="JUnit.ManagerTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BillDataTest" />
+        <item itemvalue="JUnit.AdminTest (1)" />
         <item itemvalue="JUnit.AdminTest" />
+        <item itemvalue="JUnit.BillDataTest" />
         <item itemvalue="JUnit.WorkerTest" />
         <item itemvalue="JUnit.ManagerTest" />
-        <item itemvalue="JUnit.LibrarianTest" />
       </list>
     </recent_temporary>
   </component>
@@ -229,6 +313,8 @@
       <workItem from="1699820983504" duration="952000" />
       <workItem from="1699893967952" duration="1026000" />
       <workItem from="1701261683721" duration="207000" />
+      <workItem from="1701273924173" duration="236000" />
+      <workItem from="1701274201578" duration="4412000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -294,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701271833536</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added admin and billdataTest (here aren't included the tests where the files are empty)">
+      <option name="closed" value="true" />
+      <created>1701273310438</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701273310438</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +412,8 @@
     <MESSAGE value="added test dir" />
     <MESSAGE value="Added Manager Test but need to add more to it" />
     <MESSAGE value="Added different tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added different tests" />
+    <MESSAGE value="added admin and billdataTest (here aren't included the tests where the files are empty)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added admin and billdataTest (here aren't included the tests where the files are empty)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -331,7 +426,7 @@
     <SUITE FILE_PATH="coverage/STQAproject$BillDataTest.ic" NAME="BillDataTest Coverage Results" MODIFIED="1701272831699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.java.Orders.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/STQAproject$AdminTest.ic" NAME="AdminTest Coverage Results" MODIFIED="1701272354273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/STQAproject$AdminTest.ic" NAME="AdminTest Coverage Results" MODIFIED="1701274074757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.java.Staff.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/STQAproject$ManagerTest_testIsCheckLibrarians.ic" NAME="ManagerTest.testIsCheckLibrarians Coverage Results" MODIFIED="1700059870851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -346,6 +441,9 @@
     <SUITE FILE_PATH="coverage/STQAproject$LibrarianTest.ic" NAME="LibrarianTest Coverage Results" MODIFIED="1701271700076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.java.Staff.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/STQAproject$App.ic" NAME="App Coverage Results" MODIFIED="1701272678489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/STQAproject$AdminTest__1_.ic" NAME="AdminTest (1) Coverage Results" MODIFIED="1701274331587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Staff.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/STQAproject$App.ic" NAME="App Coverage Results" MODIFIED="1701274311241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package test.java.BookstoreData;
+package BookstoreData;
 
 public class BookDataTest {
 }

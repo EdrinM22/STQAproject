@@ -1,7 +1,7 @@
-package test.java.Staff;
-import Staff.Admin;
-import Staff.Gender;
-import Staff.Worker;
+package Staff;
+import main.java.Staff.Admin;
+import main.java.Staff.Gender;
+import main.java.Staff.Worker;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class AdminTest {

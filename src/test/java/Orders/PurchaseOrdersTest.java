@@ -1,4 +1,4 @@
-package test.java.Orders;
+package Orders;
 
 public class PurchaseOrdersTest {
 }

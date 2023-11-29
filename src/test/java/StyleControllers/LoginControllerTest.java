@@ -1,4 +1,4 @@
-package test.java.StyleControllers;
+package StyleControllers;
 
 public class LoginControllerTest {
 }

@@ -1,11 +1,8 @@
-import javafx.stage.Stage;
-import BookstoreData.BookData;
-import Staff.*;
-import Staff.WorkerData;
-import Style.LoginPage;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.stage.Stage;
+import main.java.Style.LoginPage;
 
 public class App extends Application
 {
@@ -17,7 +14,7 @@ public class App extends Application
         
 
     try{
-        primaryStage.getIcons().add(new Image("file:src/Images/icon.png"));
+        primaryStage.getIcons().add(new Image("file:src/main/java/Images/icon.png"));
     }catch(Exception e){
         System.out.println("nuk ka ikone");
     }
