@@ -5,16 +5,18 @@ import BookstoreData.HeaderlessObjectOutputStream;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.stream.IntStream;
 
 public class BuyOrders implements Serializable {
+    @Serial
     private static final long serialVersionUID = 529482940413L;
-    transient private ArrayList<String >isbn13;
-    transient private ArrayList<Integer>quantity;
-    private double totalPrice;
-    private transient File file = new File("BuyBills.txt");
-    private transient File filedata= new File("BuysBillData.dat");
-    private String name;
-    private long time;
+    final transient private ArrayList<String >isbn13;
+    final transient private ArrayList<Integer>quantity;
+    private final double totalPrice;
+    private final transient File file = new File("BuyBills.txt");
+    private final transient File filedata= new File("BuysBillData.dat");
+    private final String name;
+    private final long time;
     public BuyOrders(ArrayList<String>isbn13,ArrayList<Integer>quantity,double totalPrice,String name){
         this.isbn13=isbn13;
         this.quantity=quantity;
@@ -30,9 +32,7 @@ public class BuyOrders implements Serializable {
     public String getName(){
         return this.name;
     }
-    private long getTime(){
-        return this.time;
-    }
+
         
     public ArrayList<String> getIsbns(){
         return isbn13;
@@ -41,7 +41,7 @@ public class BuyOrders implements Serializable {
         return quantity;
     }
 
-    private boolean addToDatabase() {
+    private void addToDatabase() {
 		try {
 			
 			FileOutputStream outputStream = new FileOutputStream(filedata,true);
@@ -52,10 +52,9 @@ public class BuyOrders implements Serializable {
 				writer = new ObjectOutputStream(outputStream); 
 			writer.writeObject(new Buy(name, totalPrice, time));
 			writer.close();
-			return true;
-		} catch(IOException ex) {
-			return false;
-		}
+        } catch(IOException ex) {
+            throw new RuntimeException(ex);
+        }
 	}
 
     public void writeToFile() {
@@ -63,11 +62,8 @@ public class BuyOrders implements Serializable {
         try (PrintWriter writer = new PrintWriter(file)) {
             writer.println("BuyBill");
             Date temp=new Date(time);
-            writer.println(name+"    : "+temp.toString());
-            for (int index = 0; index < isbn13.size(); index++) {
-                writer.println("ISBN-> " + isbn13.get(index) + "\n\tQuantity " + quantity.get(index) + "\n");
-
-            }
+            writer.println(name+"    : "+ temp);
+            IntStream.range(0, isbn13.size()).mapToObj(index -> "ISBN-> " + isbn13.get(index) + "\n\tQuantity " + quantity.get(index) + "\n").forEach(writer::println);
 
             writer.println("---------------------------");
             Integer total = 0;
@@ -75,7 +71,6 @@ public class BuyOrders implements Serializable {
                 total += i;
             }
             writer.println("\t\tTotal Books: " + total + " \n\t\tTotal Price: " + totalPrice + " \t\t");
-            writer.close();
         } catch (FileNotFoundException e) {
             // TODO Auto-generated catch block
             System.out.println("Bills File not found");
