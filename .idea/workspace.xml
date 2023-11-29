@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a7da77d-2437-420d-ad38-cc6e41f2c456" name="Changes" comment="Added Manager Test but need to add more to it">
+    <list default="true" id="4a7da77d-2437-420d-ad38-cc6e41f2c456" name="Changes" comment="Added different tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/GenderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/GenderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/LibrarianTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/LibrarianTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/ManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/ManagerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/WorkerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/WorkerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/GenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/GenderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/LibrarianTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/LibrarianTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/ManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/WorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/WorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/Staff/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Orders/BillDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Orders/BillDataTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/AdminTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStoreProject/test/java/Staff/AdminTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Staff/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Staff/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Orders/BillDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Orders/BillDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Staff/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Staff/AdminTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +20,9 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -112,7 +113,7 @@
       <ReportDescription localRun="true" path="C:\Users\drita\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="79a4bc5d-e8f4-4841-865c-e6aaa692b819" reportId="STQAproject/qodana/2023-11-15" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.BillDataTest">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="20" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -124,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookStoreProject" />
       <extension name="coverage">
         <pattern>
@@ -133,7 +134,22 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.java.Staff" />
-      <option name="MAIN_CLASS_NAME" value="test.java.Staff.GenderTest" />
+      <option name="MAIN_CLASS_NAME" value="test.java.Staff.AdminTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BillDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookStoreProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.Orders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.Orders" />
+      <option name="MAIN_CLASS_NAME" value="test.java.Orders.BillDataTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,17 +202,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.App" />
-      <item itemvalue="JUnit.GenderTest" />
+      <item itemvalue="JUnit.AdminTest" />
+      <item itemvalue="JUnit.BillDataTest" />
       <item itemvalue="JUnit.LibrarianTest" />
       <item itemvalue="JUnit.WorkerTest" />
       <item itemvalue="JUnit.ManagerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BillDataTest" />
+        <item itemvalue="JUnit.AdminTest" />
         <item itemvalue="JUnit.WorkerTest" />
         <item itemvalue="JUnit.ManagerTest" />
         <item itemvalue="JUnit.LibrarianTest" />
-        <item itemvalue="JUnit.GenderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701264811543</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added different tests">
+      <option name="closed" value="true" />
+      <created>1701271833536</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701271833536</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +317,8 @@
     <MESSAGE value="Stupid Mistakes solved" />
     <MESSAGE value="added test dir" />
     <MESSAGE value="Added Manager Test but need to add more to it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Manager Test but need to add more to it" />
+    <MESSAGE value="Added different tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added different tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -299,6 +326,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/STQAproject$GenderTest.ic" NAME="GenderTest Coverage Results" MODIFIED="1701271616544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.java.Staff.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/STQAproject$BillDataTest.ic" NAME="BillDataTest Coverage Results" MODIFIED="1701272831699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.java.Orders.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/STQAproject$AdminTest.ic" NAME="AdminTest Coverage Results" MODIFIED="1701272354273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.java.Staff.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/STQAproject$ManagerTest_testIsCheckLibrarians.ic" NAME="ManagerTest.testIsCheckLibrarians Coverage Results" MODIFIED="1700059870851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -313,6 +346,6 @@
     <SUITE FILE_PATH="coverage/STQAproject$LibrarianTest.ic" NAME="LibrarianTest Coverage Results" MODIFIED="1701271700076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.java.Staff.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/STQAproject$App.ic" NAME="App Coverage Results" MODIFIED="1701271652897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/STQAproject$App.ic" NAME="App Coverage Results" MODIFIED="1701272678489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
