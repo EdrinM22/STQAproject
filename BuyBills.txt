@@ -1,0 +1,8 @@
+BuyBill
+Ilvio Cumani    : Mon Nov 13 19:22:49 CET 2023
+ISBN-> 9785771908045
+	Quantity 123
+
+---------------------------
+		Total Books: 123 
+		Total Price: 0.0 		
